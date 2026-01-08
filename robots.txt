@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samuelhoppe.github.io/plateUp-Web/sitemap.xml
