@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Hauptseite (PlateUp! Recipe Planner) -->
+  <!-- Hauptseite (Gusto! Recipe Planner) -->
   <!-- Da die Sprache via JS/Cookie gesteuert wird, bleibt dies die Haupt-URL -->
   <url>
-    <loc>https://samuelhoppe.github.io/plateUp-Web/</loc>
+    <loc>https://samuelhoppe.github.io/gusto-Web/</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -13,15 +13,15 @@
 
   <!-- Impressum / Imprint -->
   <url>
-    <loc>https://samuelhoppe.github.io/plateUp-Web/impressum.html</loc>
+    <loc>https://samuelhoppe.github.io/gusto-Web/impressum.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://samuelhoppe.github.io/plateUp-Web/impressum.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://samuelhoppe.github.io/plateUp-Web/impressum_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://samuelhoppe.github.io/gusto-Web/impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samuelhoppe.github.io/gusto-Web/impressum_en.html"/>
   </url>
   <url>
-    <loc>https://samuelhoppe.github.io/plateUp-Web/impressum_en.html</loc>
+    <loc>https://samuelhoppe.github.io/gusto-Web/impressum_en.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -29,15 +29,15 @@
 
   <!-- AGB / Terms & Conditions -->
   <url>
-    <loc>https://samuelhoppe.github.io/plateUp-Web/agb.html</loc>
+    <loc>https://samuelhoppe.github.io/gusto-Web/agb.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://samuelhoppe.github.io/plateUp-Web/agb.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://samuelhoppe.github.io/plateUp-Web/agb_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://samuelhoppe.github.io/gusto-Web/agb.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samuelhoppe.github.io/gusto-Web/agb_en.html"/>
   </url>
   <url>
-    <loc>https://samuelhoppe.github.io/plateUp-Web/agb_en.html</loc>
+    <loc>https://samuelhoppe.github.io/gusto-Web/agb_en.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
@@ -45,15 +45,15 @@
 
   <!-- Datenschutzerklärung / Privacy Policy -->
   <url>
-    <loc>https://samuelhoppe.github.io/plateUp-Web/privacy_policy.html</loc>
+    <loc>https://samuelhoppe.github.io/gusto-Web/privacy_policy.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://samuelhoppe.github.io/plateUp-Web/privacy_policy.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://samuelhoppe.github.io/plateUp-Web/privacy_policy_en.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://samuelhoppe.github.io/gusto-Web/privacy_policy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samuelhoppe.github.io/gusto-Web/privacy_policy_en.html"/>
   </url>
   <url>
-    <loc>https://samuelhoppe.github.io/plateUp-Web/privacy_policy_en.html</loc>
+    <loc>https://samuelhoppe.github.io/gusto-Web/privacy_policy_en.html</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
