@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plane deine Woche mit Gusto! Recipe Planner, entdecke neue Rezepte und optimiere deine Automatisierung mit unserer kostenlosen App.">
     <title>Gusto! Recipe Planner & Guide</title>
-     <link rel="canonical" href="https://samuelhoppe.github.io/Gusto/" />
+    <link rel="canonical" href="https://samuelhoppe.github.io/Gusto/" />
+    
+    <!-- Preload Hero-Bilder & Schriften für schnelleres Rendern -->
+    <link rel="preload" as="image" href="Homescreen.webp">
+    <link rel="preload" as="image" href="planscreen.webp">
+    <link rel="preload" href="fonts/fraunces-v38-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/plus-jakarta-sans-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    
     <script src="script.js" defer></script>
     <!-- Critical CSS (Above the fold) -->
     <style>
@@ -28,17 +35,17 @@
         .hero-decoration.two{width:400px;height:400px;background:var(--secondary);bottom:-100px;left:-100px}
         .hero-decoration.three{width:200px;height:200px;background:var(--sage);top:40%;left:30%}
         .hero-content{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:1}
-        .hero-text h1{font-family:'Fraunces',serif;font-size:4rem;font-weight:700;color:var(--text-primary);margin-bottom:1.5rem;line-height:1.1;letter-spacing:-2px}
+        .hero-text h1{font-family:'Fraunces',serif;font-size:4rem;font-weight:700;color:var(--text-primary);margin-bottom:1.5rem;line-height:1.2;letter-spacing:-2px;min-height:4.8rem}
         .hero-text h1 .highlight{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
         .hero-text>p{font-size:1.25rem;color:var(--text-secondary);margin-bottom:2.5rem;line-height:1.7;max-width:500px}
-        .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:white;padding:0.5rem 1rem;border-radius:100px;font-size:0.85rem;font-weight:500;color:var(--text-secondary);margin-bottom:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.06)}
+        .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:white;padding:0.5rem 1rem;border-radius:100px;font-size:0.85rem;font-weight:500;color:var(--text-secondary);margin-bottom:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,0.06);min-height:36px}
         .hero-badge span{background:linear-gradient(135deg,var(--primary),var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700}
         .hero-buttons{display:flex;gap:1rem}
         .btn-primary,.btn-secondary{padding:1.1rem 2.2rem;border-radius:100px;text-decoration:none;font-weight:600;font-size:1rem;transition:all 0.4s cubic-bezier(0.16,1,0.3,1);display:inline-flex;align-items:center;gap:0.6rem}
         .btn-primary{background:var(--text-primary);color:white;box-shadow:0 8px 30px rgba(26,26,46,0.25)}
         .btn-secondary{background:white;color:var(--text-primary);border:2px solid rgba(26,26,46,0.1)}
         .phone-mockup{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:550px;margin:0 auto}
-        .screenshot{width:100%;aspect-ratio:800/1781;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,0.15);background:white;object-fit:cover}
+        .screenshot{width:100%;height:auto;aspect-ratio:800/1781;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,0.15);background:white;object-fit:cover;display:block}
         @media(max-width:768px){.nav-links{display:none}.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem}.hero-text h1{font-size:2.8rem}.hero-buttons{justify-content:center;flex-direction:column;align-items:center}.phone-mockup{max-width:350px}}
     </style>
     <!-- Non-critical CSS loaded asynchronously -->
