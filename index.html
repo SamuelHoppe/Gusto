@@ -9,9 +9,12 @@
     <script src="script.js" defer></script>
     <!-- Critical CSS (Above the fold) -->
     <style>
+        /* Local Font Faces */
+        @font-face{font-family:'Fraunces';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/fraunces-v38-latin-regular.woff2') format('woff2')}
+        @font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/plus-jakarta-sans-v12-latin-regular.woff2') format('woff2')}
         *{margin:0;padding:0;box-sizing:border-box}
         :root{--primary:#ff6b35;--primary-dark:#e55a2b;--secondary:#f7931e;--accent:#2d9b5a;--background:#fffbf7;--background-warm:#fff5ed;--text-primary:#1a1a2e;--text-secondary:#4a4a5e;--cream:#fef9f3;--coral:#ff8566;--sage:#7fb069}
-        body{font-family:'Outfit',sans-serif;background:var(--background);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
+        body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--background);color:var(--text-primary);line-height:1.6;overflow-x:hidden}
         nav{position:fixed;top:0;width:100%;background:rgba(255,251,247,0.9);backdrop-filter:blur(20px);padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000;border-bottom:1px solid rgba(255,107,53,0.1);transition:all 0.4s cubic-bezier(0.16,1,0.3,1)}
         .logo{font-family:'Fraunces',serif;font-size:1.9rem;font-weight:700;display:flex;align-items:center;gap:0.6rem;color:var(--text-primary);letter-spacing:-0.5px}
         .logo-img{width:48px;height:48px;aspect-ratio:1/1;border-radius:14px;box-shadow:0 4px 15px rgba(255,107,53,0.25)}
