@@ -27,7 +27,7 @@
         .hero-decoration.one{width:500px;height:500px;background:var(--coral);top:-150px;right:-100px}
         .hero-decoration.two{width:400px;height:400px;background:var(--secondary);bottom:-100px;left:-100px}
         .hero-decoration.three{width:200px;height:200px;background:var(--sage);top:40%;left:30%}
-        .hero-content{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:1}
+        .hero-content{max-width:1300px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:1;aspect-ratio:16/9;contain:layout}
         .hero-text h1{font-family:'Fraunces',serif;font-size:4rem;font-weight:700;color:var(--text-primary);margin-bottom:1.5rem;line-height:1.1;letter-spacing:-2px}
         .hero-text h1 .highlight{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
         .hero-text>p{font-size:1.25rem;color:var(--text-secondary);margin-bottom:2.5rem;line-height:1.7;max-width:500px}
@@ -38,8 +38,8 @@
         .btn-primary{background:var(--text-primary);color:white;box-shadow:0 8px 30px rgba(26,26,46,0.25)}
         .btn-secondary{background:white;color:var(--text-primary);border:2px solid rgba(26,26,46,0.1)}
         .phone-mockup{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:550px;margin:0 auto}
-        .screenshot{width:100%;height:auto;aspect-ratio:800/1781;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,0.15);background:white;object-fit:cover;display:block}
-        @media(max-width:768px){.nav-links{display:none}.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem}.hero-text h1{font-size:2.8rem}.hero-buttons{justify-content:center;flex-direction:column;align-items:center}.phone-mockup{max-width:350px}}
+        .screenshot{width:100%;height:auto;aspect-ratio:9/19.5;border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,0.15);background:white;object-fit:cover;display:block}
+        @media(max-width:768px){.nav-links{display:none}.nav-right{gap:0.5rem}.lang-switcher{margin-right:0.5rem}.lang-btn{padding:0.35rem 0.6rem;font-size:0.8rem}.cta-button{padding:0.7rem 1.2rem;font-size:0.85rem}.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem;aspect-ratio:auto}.hero-text h1{font-size:2.8rem}.hero-buttons{justify-content:center;flex-direction:column;align-items:center}.phone-mockup{max-width:350px}}
     </style>
     <!-- Non-critical CSS loaded asynchronously -->
     <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -49,7 +49,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <div class="logo">
-            <img class="logo-img" src="app_icon.webp" alt="Gusto App Icon">
+            <img class="logo-img" src="app_icon.webp" alt="Gusto App Icon" width="48" height="48">
             Gusto
         </div>
         <ul class="nav-links">
@@ -92,8 +92,8 @@
                 </div>
             </div>
             <div class="phone-mockup">
-                <img class="screenshot" src="Homescreen.webp" data-i18n-src-de="Homescreen.webp" data-i18n-src-en="Homescreen_en.webp" alt="Gusto Startseite - Rezepte durchsuchen" loading="lazy">
-                <img class="screenshot" src="planscreen.webp" data-i18n-src-de="planscreen.webp" data-i18n-src-en="planscreen_en.webp" alt="Gusto Wochenplan - Mahlzeiten planen" loading="lazy">
+                <img class="screenshot" src="Homescreen.webp" width="390" height="845" data-i18n-src-de="Homescreen.webp" data-i18n-src-en="Homescreen_en.webp" alt="Gusto Startseite - Rezepte durchsuchen" loading="lazy">
+                <img class="screenshot" src="planscreen.webp" width="390" height="845" data-i18n-src-de="planscreen.webp" data-i18n-src-en="planscreen_en.webp" alt="Gusto Wochenplan - Mahlzeiten planen" loading="lazy">
             </div>
         </div>
     </section>
@@ -125,124 +125,103 @@
         <header class="section-header fade-in">
             <span class="section-tag">Features</span>
             <h2 data-i18n="features.title">Alles was du brauchst</h2>
-            <p data-i18n="features.subtitle">Entdecke die Funktionen, die Gusto zur perfekten Meal-Planning App machen</p>
+            <p data-i18n="features.subtitle">Dein persönlicher Kochassistent mit allem, was du für die perfekte Wochenplanung brauchst.</p>
         </header>
         <div class="features-grid">
-            <article class="feature-card fade-in">
-                <span class="feature-icon">📅</span>
-                <h3 data-i18n="features.weekplan.title">Intelligenter Wochenplan</h3>
-                <p data-i18n="features.weekplan.description">Plane deine Mahlzeiten für Heute, Morgen und die ganze Woche. Übersichtliche Kategorien helfen dir, den Überblick zu behalten.</p>
-                <span class="feature-tag" data-i18n="features.available">✓ Verfügbar</span>
-            </article>
-            <article class="feature-card fade-in">
-                <span class="feature-icon">🛒</span>
-                <h3 data-i18n="features.shopping.title">Smarter einkaufen, Zeit sparen.</h3>
-                <p data-i18n="features.shopping.description">Mit der praktischen Checkliste behältst du im Supermarkt immer den Überblick. Einfach scannen, abhaken, fertig.</p>
-                <span class="feature-tag" data-i18n="features.available">✓ Verfügbar</span>
-            </article>
-            <article class="feature-card fade-in">
-                <span class="feature-icon">⏱️</span>
-                <h3 data-i18n="features.time.title">Zeitangaben</h3>
-                <p data-i18n="features.time.description">Für jedes Gericht siehst du die geschätzte Zubereitungszeit. Perfekt für die schnelle Entscheidung, was heute auf den Tisch kommt.</p>
-                <span class="feature-tag-dev" data-i18n="features.inDev">In Entwicklung</span>
-            </article>
-            <article class="feature-card fade-in">
-                <span class="feature-icon">🍔</span>
-                <h3 data-i18n="features.recipes.title">Hunderte Rezepte</h3>
-                <p data-i18n="features.recipes.description">Von schnellen Alltagsgerichten bis zu aufwendigen Festessen. Jedes Rezept mit Bild, Zutaten und Schritt-für-Schritt Anleitung.</p>
-                <span class="feature-tag" data-i18n="features.available">✓ Verfügbar</span>
-            </article>
-            <article class="feature-card fade-in">
-                <span class="feature-icon">🌍</span>
-                <h3 data-i18n="features.multilang.title">Mehrsprachig</h3>
-                <p data-i18n="features.multilang.description">Die komplette App in mehreren Sprachen verfügbar. Tooltips, Nachrichten und Rezepte – alles lokalisiert.</p>
-                <span class="feature-tag" data-i18n="features.available">✓ Verfügbar</span>
-            </article>
-            <article class="feature-card fade-in">
-                <span class="feature-icon">📤</span>
-                <h3 data-i18n="features.share.title">Teilen-Funktion</h3>
-                <p data-i18n="features.share.description">Teile deine Lieblings-Rezepte mit Freunden und Familie. Die Teilen-Funktion ist mehrsprachig verfügbar.</p>
-                <span class="feature-tag-dev" data-i18n="features.inDev">In Entwicklung</span>
-            </article>
+            <div class="feature-card fade-in">
+                <div class="feature-icon-wrapper">
+                    <span class="feature-icon">📚</span>
+                </div>
+                <h3 data-i18n="features.recipes.title">500+ Rezepte</h3>
+                <p data-i18n="features.recipes.description">Von einfach bis gourmet – finde das perfekte Rezept für jede Gelegenheit.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon-wrapper">
+                    <span class="feature-icon">📅</span>
+                </div>
+                <h3 data-i18n="features.planning.title">Wochenplaner</h3>
+                <p data-i18n="features.planning.description">Plane alle Mahlzeiten im Voraus und behalte den Überblick über die ganze Woche.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon-wrapper">
+                    <span class="feature-icon">🛒</span>
+                </div>
+                <h3 data-i18n="features.shopping.title">Auto-Einkaufsliste</h3>
+                <p data-i18n="features.shopping.description">Generiere automatisch Einkaufslisten basierend auf deinen geplanten Rezepten.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon-wrapper">
+                    <span class="feature-icon">🔍</span>
+                </div>
+                <h3 data-i18n="features.search.title">Smart Search</h3>
+                <p data-i18n="features.search.description">Finde Rezepte nach Zutaten, Ernährungsart oder Zubereitungszeit.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon-wrapper">
+                    <span class="feature-icon">❤️</span>
+                </div>
+                <h3 data-i18n="features.favorites.title">Favoriten</h3>
+                <p data-i18n="features.favorites.description">Speichere deine Lieblingsrezepte und greife jederzeit schnell darauf zu.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon-wrapper">
+                    <span class="feature-icon">🌍</span>
+                </div>
+                <h3 data-i18n="features.languages.title">Mehrsprachig</h3>
+                <p data-i18n="features.languages.description">Verfügbar auf Deutsch und Englisch – wechsle jederzeit die Sprache.</p>
+            </div>
         </div>
     </section>
 
     <!-- Premium Section -->
     <section class="premium-section" id="premium">
-        <div class="premium-decoration one"></div>
-        <div class="premium-decoration two"></div>
-        
-        <div class="premium-content">
-            <header class="premium-header fade-in">
-                <span class="premium-badge">⭐ Premium</span>
-                <h2 data-i18n="premium.title">Kommt bald: Premium Features</h2>
-                <p data-i18n="premium.subtitle">Wir arbeiten an exklusiven Funktionen für noch besseres Meal-Planning</p>
-            </header>
-            <div class="premium-grid">
-                <article class="premium-card fade-in">
-                    <span class="premium-card-icon">🎯</span>
-                    <h3 data-i18n="premium.taste.title">Geschmackstuning</h3>
-                    <p data-i18n="premium.taste.description">Personalisierte Rezeptvorschläge basierend auf deinen Vorlieben und deinem Geschmack.</p>
-                    <span class="premium-card-tag" data-i18n="features.inDev">In Entwicklung</span>
-                </article>
-                <article class="premium-card fade-in">
-                    <span class="premium-card-icon">🥗</span>
-                    <h3 data-i18n="premium.substitute.title">Zutaten Erstzen</h3>
-                    <p data-i18n="premium.substitute.description">Automatische Vorschläge für Ersatz-Zutaten. Perfekt für Vegetarier, Veganer und Allergiker.</p>
-                    <span class="premium-card-tag" data-i18n="features.inDev">In Entwicklung</span>
-                </article>
-                <article class="premium-card fade-in">
-                    <span class="premium-card-icon">⏳</span>
-                    <h3 data-i18n="premium.dynamic.title">Dynamische Zeitberechnung</h3>
-                    <p data-i18n="premium.dynamic.description">Nach dem Ersetzen von Zutaten wird die neue Zubereitungszeit automatisch ermittelt.</p>
-                    <span class="premium-card-tag" data-i18n="features.inDev">In Entwicklung</span>
-                </article>
+        <header class="premium-header fade-in">
+            <span class="premium-tag">Premium</span>
+            <h2 data-i18n="premium.title">Upgrade dein Kocherlebnis</h2>
+            <p data-i18n="premium.subtitle">Entdecke erweiterte Funktionen für noch mehr Möglichkeiten.</p>
+        </header>
+        <div class="premium-grid">
+            <div class="premium-card fade-in">
+                <span class="premium-icon">🏷️</span>
+                <h3 data-i18n="premium.categories.title">Kategorien</h3>
+                <p data-i18n="premium.categories.description">Organisiere deinen Wochenplan mit Frühstück, Mittag, Abend und Snacks.</p>
+            </div>
+            <div class="premium-card fade-in">
+                <span class="premium-icon">📊</span>
+                <h3 data-i18n="premium.nutrition.title">Nährwerte</h3>
+                <p data-i18n="premium.nutrition.description">Detaillierte Nährwertinfos für jedes Rezept – Kalorien, Protein und mehr.</p>
+            </div>
+            <div class="premium-card fade-in">
+                <span class="premium-icon">⏱️</span>
+                <h3 data-i18n="premium.timer.title">Koch-Timer</h3>
+                <p data-i18n="premium.timer.description">Integrierte Timer helfen dir, alle Zubereitungsschritte perfekt zu timen.</p>
+            </div>
+            <div class="premium-card fade-in">
+                <span class="premium-icon">🚫</span>
+                <h3 data-i18n="premium.noads.title">Keine Werbung</h3>
+                <p data-i18n="premium.noads.description">Genieße ein werbefreies Erlebnis ohne Unterbrechungen.</p>
             </div>
         </div>
     </section>
 
-    <!-- App Preview Section -->
+    <!-- App Preview -->
     <section class="app-preview" id="preview">
-        <h2 class="fade-in" data-i18n="preview.title">Die App in Aktion</h2>
-        <p class="fade-in" data-i18n="preview.subtitle">Entdecke die intuitive Benutzeroberfläche von Gusto</p>
+        <h2 class="fade-in" data-i18n="preview.title">Screenshots</h2>
+        <p class="preview-subtitle fade-in" data-i18n="preview.subtitle">Entdecke die intuitive Benutzeroberfläche von Gusto.</p>
         <div class="preview-grid">
-            <figure class="preview-card fade-in">
-                <img src="ingredientsscreen.webp" data-i18n-src-de="ingredientsscreen.webp" data-i18n-src-en="ingredientsscreen_en.webp" alt="Gusto Zutaten-Übersicht" loading="lazy">
-                <figcaption class="preview-label">
-                    <h4 data-i18n="preview.shopping.title">Einkaufsliste</h4>
-                    <p data-i18n="preview.shopping.subtitle">Alle Zutaten auf einen Blick</p>
-                </figcaption>
-            </figure>
-            <figure class="preview-card fade-in">
-                <img src="planscreen.webp" data-i18n-src-de="planscreen.webp" data-i18n-src-en="planscreen_en.webp" alt="Gusto Wochenplanung" loading="lazy">
-                <figcaption class="preview-label">
-                    <h4 data-i18n="preview.weekplan.title">Wochenplan</h4>
-                    <p data-i18n="preview.weekplan.subtitle">Heute, Morgen, Diese Woche</p>
-                </figcaption>
-            </figure>
-            <figure class="preview-card fade-in">
-                <img src="Recipedetailscreen.webp" data-i18n-src-de="Recipedetailscreen.webp" data-i18n-src-en="Recipedetailscreen_en.webp" alt="Gusto Rezeptdetails" loading="lazy">
-                <figcaption class="preview-label">
-                    <h4 data-i18n="preview.recipe.title">Rezeptdetails</h4>
-                    <p data-i18n="preview.recipe.subtitle">Zutaten & Anleitung</p>
-                </figcaption>
-            </figure>
+            <img src="Homescreen.webp" width="390" height="845" data-i18n-src-de="Homescreen.webp" data-i18n-src-en="Homescreen_en.webp" alt="Startseite" class="preview-image fade-in" loading="lazy">
+            <img src="planscreen.webp" width="390" height="845" data-i18n-src-de="planscreen.webp" data-i18n-src-en="planscreen_en.webp" alt="Wochenplan" class="preview-image fade-in" loading="lazy">
+            <img src="ShoppingScreen.webp" width="390" height="845" data-i18n-src-de="ShoppingScreen.webp" data-i18n-src-en="ShoppingScreen_en.webp" alt="Einkaufsliste" class="preview-image fade-in" loading="lazy">
+            <img src="RecipeScreen.webp" width="390" height="845" data-i18n-src-de="RecipeScreen.webp" data-i18n-src-en="RecipeScreen_en.webp" alt="Rezeptdetails" class="preview-image fade-in" loading="lazy">
         </div>
     </section>
 
-    <!-- Testimonial -->
-    <section class="testimonial">
-        <div class="testimonial-container fade-in">
-            <p class="testimonial-quote" data-i18n="testimonial.quote">Nie wieder die Frage: Was koche ich heute? Gusto hat meine Woche revolutioniert.</p>
-        </div>
-    </section>
-
-    <!-- Beta Registration Section -->
+    <!-- Beta Section -->
     <section class="beta-section" id="beta">
         <div class="beta-container">
             <div class="beta-content fade-in">
-                <span class="beta-badge">🚀 Early Access</span>
-                <h2 data-i18n="beta.title">Werde Beta-Tester</h2>
+                <span class="beta-badge" data-i18n="beta.badge">🧪 Beta Programm</span>
+                <h2 data-i18n="beta.title">Werde Beta-Tester!</h2>
                 <p data-i18n="beta.description">Sei einer der Ersten, die Gusto testen! Melde dich jetzt für die Testphase an und erhalte exklusiven Zugang zu neuen Features.</p>
                 
                 <form class="beta-form" id="betaForm" 
@@ -334,7 +313,7 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="logo">
-                    <img class="logo-img" src="app_icon.webp" alt="Gusto App Icon">
+                    <img class="logo-img" src="app_icon.webp" alt="Gusto App Icon" width="48" height="48">
                     Gusto
                 </div>
                 <p data-i18n="footer.description">Die intelligente Meal-Planning App für alle, die gerne kochen und ihre Woche organisieren möchten.</p>
