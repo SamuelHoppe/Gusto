@@ -175,7 +175,7 @@ const translations = {
         'download.description': 'Gusto befindet sich noch in der Entwicklung. Melde dich oben als Beta-Tester an, um als Erster zu erfahren, wenn die App erscheint!',
         'download.soonOn': 'Bald im',
         'download.soonAt': 'Bald bei',
-        'download.release': '📅 Geplanter Release: Januar 2026',
+        'download.release': '📅 Geplanter Release: März 2026',
         
         // Footer
         'footer.description': 'Die intelligente Meal-Planning App für alle, die gerne kochen und ihre Woche organisieren möchten.',
@@ -266,7 +266,7 @@ const translations = {
         'download.description': 'Gusto is still in development. Sign up as a beta tester above to be the first to know when the app is released!',
         'download.soonOn': 'Soon on',
         'download.soonAt': 'Soon on',
-        'download.release': '📅 Planned Release: January 2026',
+        'download.release': '📅 Planned Release: March 2026',
         
         // Footer
         'footer.description': 'The intelligent meal planning app for anyone who loves cooking and wants to organize their week.',
