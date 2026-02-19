@@ -100,7 +100,7 @@ const translations = {
         
         // Hero
         'hero.badge': 'Neu:',
-        'hero.badgeText': 'Wochenplan-Kategorien verfügbar',
+        'hero.badgeText': 'Eigene Rezepte & Premium verfügbar',
         'hero.title1': 'Plane deine Woche.',
         'hero.title2': 'Koche smarter.',
         'hero.description': 'Die intelligente App für alle, die ihre Mahlzeiten organisieren möchten. Entdecke hunderte Rezepte, plane deinen Wochenplan und generiere automatisch Einkaufslisten.',
@@ -123,24 +123,29 @@ const translations = {
         'features.shopping.description': 'Generiere automatisch Einkaufslisten basierend auf deinen geplanten Rezepten.',
         'features.duration.title': 'Rezeptdauer',
         'features.duration.description': 'Sieh auf einen Blick, wie lange jedes Rezept dauert – perfekt für die Zeitplanung.',
+        'features.inventory.title': 'Vorratsseite',
+        'features.inventory.description': 'Behalte den Überblick über deinen Vorrat und generiere automatisch Einkaufslisten aus fehlenden Zutaten.',
+        'features.ownrecipes.title': 'Eigene Rezepte',
+        'features.ownrecipes.description': 'Erstelle eigene Rezepte, speichere sie lokal und sende sie direkt an unser Team.',
         'features.share.title': 'Teilen Funktion',
         'features.share.description': 'Teile deine Lieblingsrezepte ganz einfach mit Freunden und Familie.',
         'features.barcode.title': 'Barcodescanner',
         'features.barcode.description': 'Scanne Produkte und finde passende Rezepte für deine Zutaten.',
         'features.tag.available': '✓ Verfügbar',
         'features.tag.development': '🚧 In Entwicklung',
-        
+
         // Premium
         'premium.title': 'Upgrade dein Kocherlebnis',
         'premium.subtitle': 'Entdecke erweiterte Funktionen für noch mehr Möglichkeiten.',
-        'premium.receipt.title': 'Kassenbonscanner',
-        'premium.receipt.description': 'Scanne deinen Kassenbon und erfasse automatisch deinen Vorrat.',
-        'premium.taste.title': 'Geschmackstuning',
-        'premium.taste.description': 'Personalisierte Rezeptvorschläge basierend auf deinen Vorlieben.',
+        'premium.tag.available': '⭐ Jetzt verfügbar',
+        'premium.styles.title': 'Planungsstile',
+        'premium.styles.description': 'Wähle zwischen verschiedenen Planungsstrategien: Vorrat nutzen, kulinarisch entdecken u. v. m.',
         'premium.substitute.title': 'Zutatenersatz',
         'premium.substitute.description': 'Intelligente Vorschläge für Ersatzzutaten bei Allergien oder fehlenden Zutaten.',
         'premium.autoplan.title': 'Plane für mich',
-        'premium.autoplan.description': 'Lass die KI deinen perfekten Wochenplan automatisch erstellen.',
+        'premium.autoplan.description': 'Lass deinen perfekten Wochenplan automatisch erstellen.',
+        'premium.likes.title': 'Unlimitierte Likes',
+        'premium.likes.description': 'Like so viele Rezepte du willst. Kostenlos: 5 Likes pro Tag.',
         
         // Preview
         'preview.title': 'Die App in Aktion',
@@ -191,7 +196,7 @@ const translations = {
         
         // Hero
         'hero.badge': 'New:',
-        'hero.badgeText': 'Weekly plan categories available',
+        'hero.badgeText': 'Own recipes & Premium now available',
         'hero.title1': 'Plan your week.',
         'hero.title2': 'Cook smarter.',
         'hero.description': 'The intelligent app for anyone who wants to organize their meals. Discover hundreds of recipes, plan your weekly menu, and automatically generate shopping lists.',
@@ -214,24 +219,29 @@ const translations = {
         'features.shopping.description': 'Automatically generate shopping lists based on your planned recipes.',
         'features.duration.title': 'Recipe Duration',
         'features.duration.description': 'See at a glance how long each recipe takes – perfect for time planning.',
+        'features.inventory.title': 'Pantry',
+        'features.inventory.description': 'Keep track of your pantry and automatically generate shopping lists for missing ingredients.',
+        'features.ownrecipes.title': 'Own Recipes',
+        'features.ownrecipes.description': 'Create your own recipes, save them locally and submit them directly to our team.',
         'features.share.title': 'Sharing Feature',
         'features.share.description': 'Easily share your favorite recipes with friends and family.',
         'features.barcode.title': 'Barcode Scanner',
         'features.barcode.description': 'Scan products and find matching recipes for your ingredients.',
         'features.tag.available': '✓ Available',
         'features.tag.development': '🚧 In Development',
-        
+
         // Premium
         'premium.title': 'Upgrade your cooking experience',
         'premium.subtitle': 'Discover advanced features for even more possibilities.',
-        'premium.receipt.title': 'Receipt Scanner',
-        'premium.receipt.description': 'Scan your receipt and automatically track your inventory.',
-        'premium.taste.title': 'Taste Tuning',
-        'premium.taste.description': 'Personalized recipe suggestions based on your preferences.',
+        'premium.tag.available': '⭐ Now available',
+        'premium.styles.title': 'Planning Styles',
+        'premium.styles.description': 'Choose between different planning strategies: use your pantry, explore new cuisines, and more.',
         'premium.substitute.title': 'Ingredient Substitution',
         'premium.substitute.description': 'Smart suggestions for substitute ingredients for allergies or missing items.',
         'premium.autoplan.title': 'Plan for me',
-        'premium.autoplan.description': 'Let AI automatically create your perfect weekly plan.',
+        'premium.autoplan.description': 'Automatically generate your perfect weekly plan.',
+        'premium.likes.title': 'Unlimited Likes',
+        'premium.likes.description': 'Like as many recipes as you want. Free: 5 likes per day.',
         
         // Preview
         'preview.title': 'The App in Action',
