@@ -159,17 +159,25 @@
         <h3>2.2 Kamerazugriff</h3>
         <p>Die App kann auf deine Kamera zugreifen, um:</p>
         <ul>
+            <li>Fotos für selbst erstellte Rezepte aufzunehmen</li>
             <li>Bilder für den Support-Bereich aufzunehmen (z.B. Screenshots von Problemen)</li>
         </ul>
-        <p>Diese Bilder werden nur verwendet, wenn du sie aktiv teilst.</p>
+        <p>Diese Bilder werden nur übertragen, wenn du sie aktiv hochlädst.</p>
 
-        <h3>2.3 Google Gemini API (KI-Funktionen)</h3>
-        <p>Wenn du KI-gestützte Funktionen nutzt (z.B. Rezeptvorschläge), werden Anfragen an die Google Gemini API gesendet.</p>
+        <h3>2.3 Gusto Backend-Server</h3>
+        <p>Die App kommuniziert mit unserem Backend-Server (<strong>gustoapp.onrender.com</strong>), um:</p>
+        <ul>
+            <li>Rezeptdaten zu laden (Rezeptname, Zutaten, Anleitungen, Bilder)</li>
+            <li>Rezeptsuche und -filterung durchzuführen</li>
+        </ul>
         <div class="highlight-box">
-            <h3>⚠️ Hinweis zu Google Gemini</h3>
-            <p>Bei Nutzung der KI-Funktionen werden deine Anfragen (z.B. Suchbegriffe) an Google-Server übermittelt. Es gelten zusätzlich die <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinien von Google</a>.</p>
+            <h3>⚠️ Hinweis zur Rezept-Einreichung</h3>
+            <p>Wenn du ein eigenes Rezept einreichst, werden folgende Daten an unseren Server übertragen und gespeichert: Rezepttitel, Zutaten, Zubereitungsschritte, Tags, Zeitangaben und optional ein Foto. Bilder werden bei <strong>Cloudinary</strong> (cloudinary.com) gespeichert. Es gelten zusätzlich die <a href="https://cloudinary.com/privacy" target="_blank">Datenschutzrichtlinien von Cloudinary</a>.</p>
             <span class="badge warning">Externe Datenverarbeitung</span>
         </div>
+
+        <h3>2.4 Google Play Integrity API</h3>
+        <p>Die App verwendet die Google Play Integrity API, um die Echtheit der App zu überprüfen und Missbrauch zu verhindern. Dabei wird ein von Google ausgestelltes Integritätstoken an unseren Server übermittelt. Es gelten die <a href="https://policies.google.com/privacy" target="_blank">Datenschutzrichtlinien von Google</a>.</p>
 
         <h2>3. Welche Daten werden NICHT erfasst?</h2>
         <ul>
@@ -183,17 +191,18 @@
         <h2>4. Berechtigungen</h2>
         <p>Die App benötigt folgende Berechtigungen:</p>
         <ul>
-            <li><strong>Internetzugang:</strong> Für KI-Funktionen (Google Gemini API)</li>
-            <li><strong>Kamera (optional):</strong> Für Support-Anfragen mit Bildern</li>
+            <li><strong>Internetzugang:</strong> Zum Laden von Rezeptdaten vom Gusto-Server sowie für die Google Play Integrity API</li>
+            <li><strong>Kamera (optional):</strong> Zum Aufnehmen von Fotos für eigene Rezepte oder Support-Anfragen</li>
             <li><strong>Speicher:</strong> Zum Speichern lokaler Daten</li>
         </ul>
 
         <h2>5. Datensicherheit</h2>
         <p>Deine Daten sind durch folgende Maßnahmen geschützt:</p>
         <ul>
-            <li>Lokale Speicherung ohne Cloud-Synchronisation</li>
+            <li>Lokale Daten (Mahlzeitenplan, Einkaufsliste) werden nur auf deinem Gerät gespeichert</li>
             <li>Keine Benutzerkonten oder Anmeldung erforderlich</li>
-            <li>Verschlüsselte Verbindung (HTTPS) bei externen API-Aufrufen</li>
+            <li>Verschlüsselte Verbindung (HTTPS) bei allen externen API-Aufrufen</li>
+            <li>Eingereichte Rezepte werden ohne Zuordnung zu einer Nutzeridentität gespeichert</li>
         </ul>
 
         <h2>6. Deine Rechte</h2>
@@ -224,7 +233,7 @@
         </div>
 
         <div class="footer">
-            <p>Stand: Januar 2026</p>
+            <p>Stand: Februar 2026</p>
             <p>Gusto - Dein Kochplaner</p>
         </div>
     </div>

@@ -159,17 +159,25 @@
         <h3>2.2 Camera Access</h3>
         <p>The app may access your camera to:</p>
         <ul>
+            <li>Take photos for user-submitted recipes</li>
             <li>Take photos for support requests (e.g., screenshots of issues)</li>
         </ul>
-        <p>These images are only used when you actively choose to share them.</p>
+        <p>These images are only transmitted when you actively choose to upload them.</p>
 
-        <h3>2.3 Google Gemini API (AI Features)</h3>
-        <p>When using AI-powered features (e.g., recipe suggestions), requests are sent to the Google Gemini API.</p>
+        <h3>2.3 Gusto Backend Server</h3>
+        <p>The app communicates with our backend server (<strong>gustoapp.onrender.com</strong>) to:</p>
+        <ul>
+            <li>Load recipe data (recipe names, ingredients, instructions, images)</li>
+            <li>Perform recipe search and filtering</li>
+        </ul>
         <div class="highlight-box">
-            <h3>⚠️ Note about Google Gemini</h3>
-            <p>When using AI features, your queries (e.g., search terms) are transmitted to Google servers. <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> also applies.</p>
+            <h3>⚠️ Note on Recipe Submission</h3>
+            <p>When you submit a recipe, the following data is transmitted to and stored on our server: recipe title, ingredients, preparation steps, tags, timing, and optionally a photo. Images are stored with <strong>Cloudinary</strong> (cloudinary.com). <a href="https://cloudinary.com/privacy" target="_blank">Cloudinary's Privacy Policy</a> also applies.</p>
             <span class="badge warning">External Data Processing</span>
         </div>
+
+        <h3>2.4 Google Play Integrity API</h3>
+        <p>The app uses the Google Play Integrity API to verify app authenticity and prevent misuse. An integrity token issued by Google is transmitted to our server. <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> also applies.</p>
 
         <h2>3. What Data is NOT Collected?</h2>
         <ul>
@@ -183,17 +191,18 @@
         <h2>4. Permissions</h2>
         <p>The app requires the following permissions:</p>
         <ul>
-            <li><strong>Internet Access:</strong> For AI features (Google Gemini API)</li>
-            <li><strong>Camera (optional):</strong> For support requests with images</li>
+            <li><strong>Internet Access:</strong> To load recipe data from the Gusto server and for the Google Play Integrity API</li>
+            <li><strong>Camera (optional):</strong> To take photos for recipes or support requests</li>
             <li><strong>Storage:</strong> For saving local data</li>
         </ul>
 
         <h2>5. Data Security</h2>
         <p>Your data is protected by the following measures:</p>
         <ul>
-            <li>Local storage without cloud synchronization</li>
+            <li>Local data (meal plan, shopping list) is stored only on your device</li>
             <li>No user accounts or login required</li>
-            <li>Encrypted connection (HTTPS) for external API calls</li>
+            <li>Encrypted connection (HTTPS) for all external API calls</li>
+            <li>Submitted recipes are stored without being linked to a user identity</li>
         </ul>
 
         <h2>6. Your Rights</h2>
@@ -224,7 +233,7 @@
         </div>
 
         <div class="footer">
-            <p>Last updated: January 2026</p>
+            <p>Last updated: February 2026</p>
             <p>Gusto - Your Meal Planner</p>
         </div>
     </div>
