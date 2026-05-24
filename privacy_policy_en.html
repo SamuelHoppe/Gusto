@@ -3,239 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Gusto</title>
+    <title>Privacy Policy – Gusto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            padding: 40px;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #eee;
-        }
-        .logo {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-        h1 {
-            color: #667eea;
-            font-size: 28px;
-            margin-bottom: 5px;
-        }
-        .subtitle {
-            color: #666;
-            font-size: 14px;
-        }
-        h2 {
-            color: #333;
-            font-size: 20px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-left: 15px;
-            border-left: 4px solid #667eea;
-        }
-        h3 {
-            color: #555;
-            font-size: 16px;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        p, li {
-            color: #555;
-            margin-bottom: 10px;
-        }
-        ul {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-            border-radius: 12px;
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 4px solid #667eea;
-        }
-        .highlight-box h3 {
-            margin-top: 0;
-            color: #667eea;
-        }
-        .contact-box {
-            background: #f8f9fa;
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 30px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #eee;
-            color: #888;
-            font-size: 12px;
-        }
-        .badge {
-            display: inline-block;
-            background: #28a745;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin: 5px 5px 5px 0;
-        }
-        .badge.warning {
-            background: #ffc107;
-            color: #333;
-        }
-        @media (max-width: 600px) {
-            .container {
-                padding: 20px;
-                border-radius: 15px;
-            }
-            h1 {
-                font-size: 22px;
-            }
-            h2 {
-                font-size: 18px;
-            }
-        }
+        body { font-family: 'Outfit', sans-serif; line-height: 1.7; color: #1a1a2e; max-width: 800px; margin: 40px auto; padding: 20px; background: #fffbf7; }
+        h1 { color: #ff6b35; border-bottom: 2px solid #ff6b35; padding-bottom: 10px; margin-bottom: 4px; }
+        .meta { color: #999; font-size: 13px; margin-bottom: 28px; }
+        h2 { margin-top: 28px; color: #4a4a5e; font-size: 1.1rem; padding-left: 12px; border-left: 3px solid #ff6b35; }
+        h3 { margin-top: 16px; color: #555; font-size: 1rem; }
+        p, li { color: #555; font-size: 14.5px; margin-bottom: 8px; }
+        ul { margin-left: 20px; margin-bottom: 12px; }
+        a { color: #ff6b35; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #ff6b35; text-decoration: none; font-weight: 600; }
+        .content { background: white; padding: 36px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .highlight { background: #fff5f0; border-radius: 10px; padding: 14px 18px; margin: 16px 0; font-size: 14px; border-left: 3px solid #ff6b35; }
+        .warning { background: #fff8e1; border-radius: 10px; padding: 14px 18px; margin: 16px 0; font-size: 14px; border-left: 3px solid #ffc107; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.5px; }
+        th { background: #fff5f0; color: #555; text-align: left; padding: 10px 12px; }
+        td { padding: 10px 12px; border-bottom: 1px solid #eee; color: #555; vertical-align: top; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">🍳</div>
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">Gusto - Your Meal Planner</p>
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <div class="content">
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: May 2026 &nbsp;·&nbsp; Gusto – Your Meal Planner</p>
+
+        <div class="highlight">
+            <strong>Summary:</strong> Gusto needs your email to create an account and stores your app data (meal plans, recipes, etc.) on our server for cross-device sync. Your data is never sold or used for advertising.
         </div>
 
-        <div class="highlight-box">
-            <h3>🔒 At a Glance</h3>
-            <p><strong>Gusto</strong> respects your privacy. Your data stays on your device and is never sold or used for advertising purposes.</p>
-            <span class="badge">✓ No Ads</span>
-            <span class="badge">✓ No Trackers</span>
-            <span class="badge">✓ Local Storage</span>
-        </div>
+        <h2>1. Controller</h2>
+        <p>Samuel Hoppe<br>Rheingutstraße 36, 78462 Konstanz, Germany<br>Email: <a href="mailto:Gusto.app@web.de">Gusto.app@web.de</a></p>
 
-        <h2>1. Data Controller</h2>
-        <p>Responsible for this app:</p>
-        <p>
-            <strong>Samuel Hoppe</strong><br>
-            Rheingutstraße 36<br>
-            Konstanz, Germany<br>
-            Email: hoppesa2@gmail.com
-        </p>
+        <h2>2. Data We Collect</h2>
 
-        <h2>2. What Data is Collected?</h2>
-        
-        <h3>2.1 Locally Stored Data</h3>
-        <p>The following data is stored <strong>exclusively locally</strong> on your device:</p>
+        <h3>2.1 Account Data</h3>
+        <p>When you create an account, we process:</p>
         <ul>
-            <li><strong>Meal Plan:</strong> Your planned recipes and dates</li>
-            <li><strong>Shopping List:</strong> Ingredients and their status (checked/unchecked)</li>
-            <li><strong>Language Settings:</strong> Your preferred language (German/English)</li>
-            <li><strong>App Settings:</strong> Personal preferences</li>
+            <li><strong>Email address</strong> – for identification and optional communication</li>
+            <li><strong>Firebase User ID (UID)</strong> – to associate your data</li>
+            <li>With Google Sign-In: name and profile picture (provided by Google)</li>
         </ul>
-        <p>This data is stored using "Shared Preferences" technology and never leaves your device.</p>
+        <p>Stored by <strong>Google Firebase Authentication</strong> (EU/US data centers).</p>
 
-        <h3>2.2 Camera Access</h3>
-        <p>The app may access your camera to:</p>
+        <h3>2.2 App Content Data</h3>
+        <p>For registered users, the following is stored on our backend server (<strong>gustoapp.onrender.com</strong>, hosted at Render.com, USA):</p>
         <ul>
-            <li>Take photos for user-submitted recipes</li>
-            <li>Take photos for support requests (e.g., screenshots of issues)</li>
+            <li>Meal plan and scheduled recipes</li>
+            <li>Pantry inventory</li>
+            <li>Dietary preferences and recipe ratings</li>
+            <li>Custom recipes</li>
+            <li>Subscription/premium status</li>
+            <li>Referral code and invitation count</li>
         </ul>
-        <p>These images are only transmitted when you actively choose to upload them.</p>
+        <p>Legal basis: Art. 6(1)(b) GDPR (contract performance).</p>
 
-        <h3>2.3 Gusto Backend Server</h3>
-        <p>The app communicates with our backend server (<strong>gustoapp.onrender.com</strong>) to:</p>
+        <h3>2.3 Recipe Images</h3>
+        <p>Images in custom submitted recipes are stored at <strong>Cloudinary</strong> (USA).</p>
+
+        <h3>2.4 In-App Purchases</h3>
+        <p>Purchases via <strong>Google Play</strong>. Gusto only receives confirmation of active subscription status – no payment data.</p>
+
+        <h3>2.5 Play Integrity API</h3>
+        <p>To prevent fraud, the app checks installation authenticity via Google Play Integrity API. An integrity token is transmitted to our server.</p>
+
+        <h3>2.6 Local Data (Without Account)</h3>
+        <p>Without an account, data is stored only locally on your device (SharedPreferences) and never leaves it.</p>
+
+        <h2>3. Third-Party Services</h2>
+        <table>
+            <tr><th>Service</th><th>Purpose</th><th>Location</th></tr>
+            <tr><td>Google Firebase Auth</td><td>Account management, authentication</td><td>EU/USA</td></tr>
+            <tr><td>Render.com (MongoDB)</td><td>Backend server, app data storage</td><td>USA</td></tr>
+            <tr><td>Cloudinary</td><td>Images for submitted recipes</td><td>USA</td></tr>
+            <tr><td>Google Play</td><td>In-app purchases, subscriptions</td><td>USA</td></tr>
+            <tr><td>Google Play Integrity</td><td>App authenticity verification</td><td>USA</td></tr>
+        </table>
+        <div class="warning">For transfers to the USA: The listed providers (Google, Render, Cloudinary) are certified under the EU-US Data Privacy Framework or use EU Standard Contractual Clauses as the transfer basis.</div>
+
+        <h2>4. App Permissions</h2>
         <ul>
-            <li>Load recipe data (recipe names, ingredients, instructions, images)</li>
-            <li>Perform recipe search and filtering</li>
-        </ul>
-        <div class="highlight-box">
-            <h3>⚠️ Note on Recipe Submission</h3>
-            <p>When you submit a recipe, the following data is transmitted to and stored on our server: recipe title, ingredients, preparation steps, tags, timing, and optionally a photo. Images are stored with <strong>Cloudinary</strong> (cloudinary.com). <a href="https://cloudinary.com/privacy" target="_blank">Cloudinary's Privacy Policy</a> also applies.</p>
-            <span class="badge warning">External Data Processing</span>
-        </div>
-
-        <h3>2.4 Google Play Integrity API</h3>
-        <p>The app uses the Google Play Integrity API to verify app authenticity and prevent misuse. An integrity token issued by Google is transmitted to our server. <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> also applies.</p>
-
-        <h2>3. What Data is NOT Collected?</h2>
-        <ul>
-            <li>❌ No personal data (name, email, phone)</li>
-            <li>❌ No location data</li>
-            <li>❌ No usage statistics or analytics</li>
-            <li>❌ No advertising IDs or tracking</li>
-            <li>❌ No sharing with third parties for advertising</li>
+            <li><strong>Internet:</strong> Required – for recipe data, sync, and backend communication</li>
+            <li><strong>Camera (optional):</strong> Only for taking photos for custom recipes or support requests</li>
+            <li><strong>Notifications (optional):</strong> For meal-time reminders</li>
+            <li><strong>Billing:</strong> For in-app purchases via Google Play</li>
         </ul>
 
-        <h2>4. Permissions</h2>
-        <p>The app requires the following permissions:</p>
+        <h2>5. Your Rights (GDPR Art. 15–22)</h2>
         <ul>
-            <li><strong>Internet Access:</strong> To load recipe data from the Gusto server and for the Google Play Integrity API</li>
-            <li><strong>Camera (optional):</strong> To take photos for recipes or support requests</li>
-            <li><strong>Storage:</strong> For saving local data</li>
+            <li><strong>Access:</strong> You can request information about what data we hold about you.</li>
+            <li><strong>Rectification:</strong> Incorrect data can be corrected on request.</li>
+            <li><strong>Erasure:</strong> Delete your account anytime via Account → Delete Account. All server data will be removed.</li>
+            <li><strong>Portability:</strong> We can provide your data in a common format on request.</li>
+            <li><strong>Objection:</strong> You can object to processing, which will result in account deletion.</li>
+            <li><strong>Complaint:</strong> You have the right to lodge a complaint with a supervisory authority.</li>
         </ul>
 
-        <h2>5. Data Security</h2>
-        <p>Your data is protected by the following measures:</p>
+        <h2>6. Data Security</h2>
         <ul>
-            <li>Local data (meal plan, shopping list) is stored only on your device</li>
-            <li>No user accounts or login required</li>
-            <li>Encrypted connection (HTTPS) for all external API calls</li>
-            <li>Submitted recipes are stored without being linked to a user identity</li>
+            <li>All connections are TLS/HTTPS-encrypted</li>
+            <li>API access is secured with API keys</li>
+            <li>Firebase Authentication uses secure token-based auth</li>
+            <li>Passwords are hashed by Firebase – the Operator has no access</li>
         </ul>
 
-        <h2>6. Your Rights</h2>
-        <p>You have the right at any time to:</p>
-        <ul>
-            <li><strong>Access:</strong> Know what data is stored</li>
-            <li><strong>Deletion:</strong> Delete all data by uninstalling the app</li>
-            <li><strong>Revocation:</strong> Revoke permissions in device settings</li>
-        </ul>
+        <h2>7. Retention</h2>
+        <p>Data is retained as long as your account is active. After account deletion, all server data is permanently removed within 30 days. Firebase authentication data is deleted immediately.</p>
 
-        <h2>7. Deleting Your Data</h2>
-        <p>All locally stored data is completely deleted when you:</p>
-        <ul>
-            <li>Uninstall the app, or</li>
-            <li>Clear app data in device settings</li>
-        </ul>
+        <h2>8. Children</h2>
+        <p>The app is not intended for children under 16. We do not knowingly collect data from minors.</p>
 
-        <h2>8. Changes to This Privacy Policy</h2>
-        <p>We reserve the right to update this privacy policy. The current version is always available in the app and online.</p>
+        <h2>9. Changes</h2>
+        <p>Material changes to this policy will be communicated in-app. The current version is always available at this URL.</p>
 
-        <h2>9. Children</h2>
-        <p>This app is not specifically designed for children under 13 years old. We do not knowingly collect personal data from children.</p>
+        <h2>10. Contact</h2>
+        <p>For privacy questions: <a href="mailto:Gusto.app@web.de">Gusto.app@web.de</a></p>
 
-        <div class="contact-box">
-            <h3>📧 Contact</h3>
-            <p>For privacy-related questions, you can reach us at:</p>
-            <p><strong>Email:</strong> Gusto.app@web.de</p>
-        </div>
-
-        <div class="footer">
-            <p>Last updated: February 2026</p>
-            <p>Gusto - Your Meal Planner</p>
-        </div>
+        <p style="margin-top:32px;color:#aaa;font-size:12px;">© 2026 Samuel Hoppe · <a href="agb_en.html">Terms</a> · <a href="impressum_en.html">Legal Notice</a></p>
     </div>
 </body>
 </html>
